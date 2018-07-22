@@ -5,7 +5,7 @@ An example app with kubernetes configuration to autoscale on external custom met
 
 This is an example app that shows how to set up pod autoscaling with custom and external metrics.
 
-See [this blog post]() for more details.
+See this blog post,[Kubernetes HPA Autoscaling with Custom and External Metrics](https://medium.com/@jessgreb01/kubernetes-hpa-autoscaling-with-custom-and-external-metrics-da7f41ff7846), for more details.
 
 ### Steps
 
