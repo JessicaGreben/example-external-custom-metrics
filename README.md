@@ -30,8 +30,8 @@ See [this blog post]() for more details.
 
 4. Deploy [Nginx Ingress Controller helm chart](https://github.com/helm/charts/tree/master/stable/nginx-ingress). Make sure to add the [`prometheus-to-stackdriver`](https://github.com/GoogleCloudPlatform/k8s-stackdriver/tree/master/prometheus-to-sd) sidecar to the Nginx deployment. This can be added to the default values.yaml file with `controller.extraConatiners` configuration.  [Here is a good example](https://github.com/GoogleCloudPlatform/k8s-stackdriver/blob/master/prometheus-to-sd/kubernetes/prometheus-to-sd-kube-state-metrics.yaml#L26) to follow, however the  `--source` value needs to be change to where nginx exposes it's metrics.
 
-    helm upgrade --install nginx stable/nginx-ingress --values charts/nginx-ingress-ctlr-values/values.yaml
+    `helm upgrade --install nginx stable/nginx-ingress --values charts/nginx-ingress-ctlr-values/values.yaml`
     
 5. Deploy the example application as a Kubernetes deployment with a service, ingress, and the horizontal pod autoscaler.
 
-    helm install charts/example-nodejs-app/ --name example-nodejs-app
+    `helm install charts/example-nodejs-app/ --name example-nodejs-app`
