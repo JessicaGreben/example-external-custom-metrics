@@ -13,6 +13,7 @@ See [this blog post]() for more details.
 
 2. Install Tiller in this cluster. This step assumes you have [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) and [helm](https://docs.helm.sh/using_helm/) installed locally and that your kubeconfig is configured to talk to the cluster created in step 1.
 
+    ```yaml
     # confirm kubectl is configured for the correct cluster
     kubectl config current-context
 
