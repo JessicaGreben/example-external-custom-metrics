@@ -1,0 +1,6 @@
+name: example-nodejs-app
+apiVersion: v1
+version: 1.0.0
+description: An example app for HPA with external metrics.
+sources:
+  - https://github.com/JessicaGreben/example-external-custom-metrics

@@ -1,0 +1,8 @@
+ingress:
+  name: example-nodejs-ingress
+
+domainName: example-nodejs.myexample.com
+
+app:
+  name: example-nodejs-app
+  port: "8080"
